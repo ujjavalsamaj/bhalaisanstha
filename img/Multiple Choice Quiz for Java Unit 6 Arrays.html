@@ -1,0 +1,528 @@
+
+<!-- saved from url=(0054)https://mathbits.com/MathBits/Java/arrays/MCArrays.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>Multiple Choice Quiz for Java Unit 6 Arrays</title>
+<meta name="description" content="Multiple Choice Quiz for Java Unit 6 Arrays">
+<meta name="author" content="Donna Roberts">
+<meta mame="keywords" content="beginning programming in Java JBuilder Arrays Quiz Review">
+<meta name="copyright" content="Frederick and Donna Roberts, MathBits.com"> 
+<meta http-equiv="pragma" content="NO-CACHE">
+<style fprolloverstyle="">A:hover {color: #996600}
+</style>
+<script language="JavaScript">
+<!--
+	var num = 20;
+	var answer = new Array(num);
+	var response = new Array(num);
+	var numberCorrect = 0;
+	var percentScore = 0;
+    var display;
+    
+	//fill correct answer array
+	answer[1] = "b";  
+	answer[2] = "c";  
+	answer[3] = "c";  
+	answer[4] = "a";  
+	answer[5] = "b";
+	answer[6] = "a";
+	answer[7] = "a";
+	answer[8] = "b";
+	answer[9] = "d";
+	answer[10]= "b";
+	answer[11] = "d";  
+	answer[12] = "a";  
+	answer[13] = "d";  
+	answer[14] = "b";  
+	answer[15] = "a";
+	answer[16] = "c";
+	answer[17] = "c";
+	answer[18] = "d";
+	answer[19] = "c";
+	answer[20]= "a";
+
+	
+
+	//function to assign the user reponses to an array
+	function fillArray(questionNumber, userResponse)
+	{
+	     response[questionNumber] = userResponse;
+	}
+	
+	//function to grade the quiz after user responses are given and also build the display box
+	function GradeTheQuiz()
+	{
+		display = "Multiple Choice Quiz\n============\n";
+		for(i=1; i<=num; i++)
+		{
+			display = display + i + ".";
+			if (response[i] != "a" && response[i] != "b" && response[i] != "c" && response[i] != "d")
+		  	{
+				response[i] = "  blank";
+				display = display + response[i] + "\n";
+			}
+		 	else if(answer[i] != response[i])
+	  		{
+	    		display = display + "  Sorry. Not Correct." + "\n";
+	 		}
+	  		else
+	  		{
+	    		display = display + "  CORRECT! \n";
+	  			numberCorrect++;
+	  		}
+		}
+		
+		percentScore = (numberCorrect/num)*100;
+		display = display + "============\nSCORE = " + percentScore + " %";
+		
+		//display the box
+		alert(display);
+	
+		numberCorrect=0;
+		percentScore=0;
+	}
+// -->
+</script>
+</head>
+
+<body link="#000000" vlink="#000000" alink="#996600" bgcolor="#336699">
+<script language="JavaScript">
+<!-- Begin
+if (window != top) top.location.href = location.href;
+// End -->
+</script>
+
+
+<div align="center">
+	<table border="3" width="650" id="table4" bgcolor="#FFFFFF" bordercolor="#C0C0C0" style="border-collapse: collapse">
+		<tbody><tr>
+			<td>
+      <p align="center">
+      <br>
+		<map name="FPMap0">
+		<area href="http://mathbits.com/" shape="rect" coords="459, 104, 561, 125" alt="MathBits.com">
+		</map>
+		<img border="0" src="./Multiple Choice Quiz for Java Unit 6 Arrays_files/arraybutton.jpg" width="577" height="144" usemap="#FPMap0"><br>
+		<font size="2" face="Times New Roman"><a href="https://mathbits.com/MathBits/Java/arrays/arrays.htm">Return to Unit 
+		Menu</a> | <a href="https://mathbits.com/MathBits/Java/JavaOpenPage.htm">Java Main Page</a> |
+		<a href="http://mathbits.com/">MathBits.com</a> |
+		<a href="http://mathbits.com/MathBits/TermsOfUse/termsofuse.htm">Terms 
+		of Use </a>&nbsp;| <a href="https://mathbits.com/MathBits/Java/ResourceCD/ResourceCD.htm">Java Resource CD</a></font><font size="2"><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FFFFFF"><br>
+			</font>
+	<b><font size="6">Multiple Choice Java Array Quiz</font></b></p></td>
+		</tr>
+	</tbody></table>
+	&nbsp;<table border="3" width="561" id="table1" bordercolor="#C0C0C0" style="border-collapse: collapse" background="./Multiple Choice Quiz for Java Unit 6 Arrays_files/blueblock.gif">
+		<tbody><tr>
+			<td><center>
+<div align="center">
+<i><br>
+Directions:&nbsp; Choose the best answer.&nbsp; Use the button at the 
+bottom<br>
+to check your answers.</i><br>
+<br><table width="514" border="0" cellpadding="2" id="table2">
+<form></form>
+<tbody><tr><td align="left"><b>1.&nbsp; Which of the following declares an array of 
+	integers named <font face="Arial">number</font>?</b></td></tr>
+<tr><td align="left">
+	<font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question1" value="a" onclick="fillArray(1, this.value)"> 
+	[a] int number ;</font></td></tr>
+<tr><td align="left"><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question1" value="b" onclick="fillArray(1, this.value)"> 
+	[b] int [ ] number ;</font></td></tr>
+<tr><td align="left"><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question1" value="c" onclick="fillArray(1, this.value)"> 
+	[c] int new number [ ] ;</font></td></tr>
+<tr><td align="left" height="27"><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question1" value="d" onclick="fillArray(1, this.value)"> 
+	[d] int number = int [ ] ;</font></td></tr>
+<tr><td>&nbsp;<p><b>2.&nbsp; What is the output of the following code fragments?<br>
+	<font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp; </font></b><font face="Arial">
+	int [ ] fun = new int [5];<br>
+&nbsp;&nbsp;&nbsp;&nbsp; fun[0] = 1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; fun[1] = 2;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; fun[2] = 3;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; fun[3] = 4;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; fun[4] = 5;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; int j = 3;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(fun[ j-1]) ;</font></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question2" value="a" onclick="fillArray(2, this.value)"> 
+	[a] <font face="Arial">1</font></td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question2" value="b" onclick="fillArray(2, this.value)"> 
+	[b] <font face="Arial">2</font></td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question2" value="c" onclick="fillArray(2, this.value)"> 
+	[c] <font face="Arial">3</font></td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question2" value="d" onclick="fillArray(2, this.value)"> 
+	[d] 4</td></tr>
+<tr><td><br>
+	<p><b>3.&nbsp; What is the output of the following code fragment?<br>
+&nbsp;&nbsp;&nbsp;&nbsp; </b><font face="Arial">int [ ] odd = {1, 3, 5, 7, 9, 11 
+	};<br>
+&nbsp;&nbsp;&nbsp;&nbsp; System.out.println( odd[0] + "&nbsp; " + odd[3] ) ;</font></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question3" value="a" onclick="fillArray(3, this.value)"> 
+	[a] 1&nbsp; 5</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question3" value="b" onclick="fillArray(3, this.value)"> 
+	[b] 6 </td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question3" value="c" onclick="fillArray(3, this.value)"> 
+	[c] 1&nbsp; 7</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question3" value="d" onclick="fillArray(3, this.value)"> 
+	[d] 8</td></tr>
+<tr><td><br>
+	<p><b>4.&nbsp; What does the following method do?<br>
+&nbsp;&nbsp;&nbsp;&nbsp; </b><font face="Arial">public static void numbers (int 
+	[ ] num)<br>
+&nbsp;&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for(int x = 1; x &lt; 
+	num.length; x++)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	num[x] = num[0];<br>
+&nbsp;&nbsp;&nbsp;&nbsp; }</font><b><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</font>&nbsp;&nbsp;&nbsp;&nbsp; </b></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question4" value="a" onclick="fillArray(4, this.value)"> 
+	[a] It copies what is in cell 0 into all other cells.</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question4" value="b" onclick="fillArray(4, this.value)"> 
+	[b] It changes every element to the value of <font face="Arial">&nbsp;x.</font></td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question4" value="c" onclick="fillArray(4, this.value)"> 
+	[c] It copies 0 into every element.</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question4" value="d" onclick="fillArray(4, this.value)"> 
+	[d] It puts the array into numerical ascending order.</td></tr>
+<tr><td><br>
+	<p><b>5.&nbsp; For which of the following situations is only one array NOT 
+	appropriate? </b></p></td></tr>
+<tr><td align="left">
+	<font face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question5" value="a" onclick="fillArray(5, this.value)"> 
+	[a]&nbsp;&nbsp; Working with 30 scores on the CS exam.</font></td></tr>
+<tr><td align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question5" value="b" onclick="fillArray(5, this.value)"> 
+	[b]&nbsp; &nbsp;Working with names and ages of students.</font></td></tr>
+<tr><td align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question5" value="c" onclick="fillArray(5, this.value)"> 
+	[c]&nbsp; &nbsp;Working with mileage during the weeks of vacation.</font></td></tr>
+<tr><td align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question5" value="d" onclick="fillArray(5, this.value)"> 
+	[d] &nbsp; Working with company monthly sales totals.</font></td></tr>
+<tr><td><br>
+	<p><b>6.&nbsp; What is the output of the following code fragment?<br>
+&nbsp;&nbsp;&nbsp; </b><font face="Arial">&nbsp;int [ ] evens = {2, 4, 6, 8, 
+	10};<br>
+&nbsp;&nbsp;&nbsp;&nbsp; evens[0] = 44;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; evens[4] = evens[2];<br>
+&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(evens[0] + "&nbsp; " + evens[4]);</font></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question6" value="a" onclick="fillArray(6, this.value)"> 
+	[a] <font face="Arial">44&nbsp; 10</font></td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question6" value="b" onclick="fillArray(6, this.value)"> 
+	[b] <font face="Arial">2&nbsp; 10</font></td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question6" value="c" onclick="fillArray(6, this.value)"> 
+	[c] <font face="Arial">54</font></td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question6" value="d" onclick="fillArray(6, this.value)"> 
+	[d] 44&nbsp; 6</td></tr>
+<tr><td><br>
+	<p><b>7.&nbsp; What are the subscripts for this array?<font face="Arial"> </font></b>
+	<font face="Arial">&nbsp;int [ ] k = { 11, 12, 13, 14, 15};</font></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question7" value="a" onclick="fillArray(7, this.value)"> 
+	[a] 0, 1, 2, 3, 4</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question7" value="b" onclick="fillArray(7, this.value)"> 
+	[b] 1, 2, 3, 4, 5</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question7" value="c" onclick="fillArray(7, this.value)"> 
+	[c] 11, 12, 13, 14, 15</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question7" value="d" onclick="fillArray(7, this.value)"> 
+	[d] 10, 11, 12, 13, 14</td></tr>
+<tr><td><br>
+	<p><b>8.&nbsp; What is the output of the following code fragment?<br>
+	<font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></b>
+	<font face="Arial">int [ ] items = {2, 7, 3, 5, 8, 9};<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int funny = items[0];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int i = 0; i &lt; items.length; i++)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (items[ i 
+	] &gt; funny)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	funny = items[ i ];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.print(funny);&nbsp;&nbsp;&nbsp;&nbsp;
+	</font></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question8" value="a" onclick="fillArray(8, this.value)"> 
+	[a] 2</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question8" value="b" onclick="fillArray(8, this.value)"> 
+	[b] 9</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question8" value="c" onclick="fillArray(8, this.value)"> 
+	[c] 2&nbsp; 3&nbsp; 5&nbsp; 7&nbsp; 8&nbsp; 9 </td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question8" value="d" onclick="fillArray(8, this.value)"> 
+	[d] 2&nbsp; 7&nbsp; 3&nbsp; 5&nbsp; 8&nbsp; 9</td></tr>
+<tr><td><br>
+	<p><b>9.&nbsp; What number is in matrix[2][2]?<br>
+&nbsp;&nbsp;&nbsp;&nbsp; </b><font face="Arial">&nbsp;int [ ] [ ] matrix = { {1, 
+	2, 3, 4},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	{5, 6, 7, 8},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	{9, 10, 11, 12},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	{13, 14, 15, 16}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	};</font></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question9" value="a" onclick="fillArray(9, this.value)"> 
+	[a] 6</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question9" value="b" onclick="fillArray(9, this.value)"> 
+	[b] 7</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question9" value="c" onclick="fillArray(9, this.value)"> 
+	[c] 10</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question9" value="d" onclick="fillArray(9, this.value)"> 
+	[d] 11</td></tr>
+<tr><td><br>
+	<p><b>10.&nbsp; <span class="quia_standard">What is the output of the 
+	following code fragment?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><span class="quia_standard"><font face="Arial">double 
+	[ ] x = new double [ 4];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x[0] = 8.5;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x[1] = 6.5;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x[2] = 9.5;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x[3] = 12.5;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(x[1 + 2]);</font></span></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question10" value="a" onclick="fillArray(10, this.value)"> 
+	[a] 6.5&nbsp; 9.5</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question10" value="b" onclick="fillArray(10, this.value)"> 
+	[b] 12.5</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question10" value="c" onclick="fillArray(10, this.value)"> 
+	[c] 15.0</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question10" value="d" onclick="fillArray(10, this.value)"> 
+	[d] 9.5&nbsp; 12.5<table width="514" border="0" cellpadding="2" id="table6">
+<tbody><tr><td align="left">&nbsp;<p><b>11.&nbsp; What is the output for the following 
+	code fragment?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><font face="Arial">int [ ] numbers = { 
+	1, 2, 3, 4, 5, 6, 7,&nbsp; 8, 9, 10};<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int j = 0; j &lt; numbers.length; j++)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	System.out.print(numbers[ j ] + " "); </font></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question1" value="a" onclick="fillArray(11, this.value)"> 
+	[a] 1 2 3 4 5</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question1" value="b" onclick="fillArray(11, this.value)"> 
+	[b] 6 7 8 9 10</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question1" value="c" onclick="fillArray(11, this.value)"> 
+	[c] 2 3 4 5 6 7 8 9 10</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question1" value="d" onclick="fillArray(11, this.value)"> 
+	[d] 1 2 3 4 5 6 7 8 9 10</td></tr>
+<tr><td>&nbsp;<p><b>12.&nbsp; What is the output for the following code 
+	fragment?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><font face="Arial">&nbsp;int [ ] a = new int 
+	[5];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a[0] = 5;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a[1] = 4;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a[2] = 3;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.print(a[0] + a[1] + a[4]);</font></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question2" value="a" onclick="fillArray(12, this.value)"> 
+	[a] <font face="Arial">9</font></td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question2" value="b" onclick="fillArray(12, this.value)"> 
+	[b] <font face="Arial">5 3 1</font></td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question2" value="c" onclick="fillArray(12, this.value)"> 
+	[c] <font face="Arial">5 3 0</font></td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question2" value="d" onclick="fillArray(12, this.value)"> 
+	[d] 8</td></tr>
+<tr><td><br>
+	<p><b>13.&nbsp; What is the output for the following code fragment?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><font face="Arial">&nbsp;int [ ] car = new 
+	int [ 7];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; car[0] = 2004;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; car[1] = 2006;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(car[0] + " " + car[1] + " " 
+	car[7]);</font></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question3" value="a" onclick="fillArray(13, this.value)"> 
+	[a] 2004&nbsp; 2006&nbsp; 0</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question3" value="b" onclick="fillArray(13, this.value)"> 
+	[b] 2004&nbsp; 2006</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question3" value="c" onclick="fillArray(13, this.value)"> 
+	[c] 4010</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question3" value="d" onclick="fillArray(13, this.value)"> 
+	[d] an error will occur</td></tr>
+<tr><td><br>
+	<p><b>14.&nbsp; What is the output for the following code fragment?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><font face="Arial">int [ ] array = {2, 
+	4, 6, 8, 10, 12, 14, 16, 18, 20};<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int i = 0; i &lt; 4; i++)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	System.out.print(array[i] + " ");</font></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question4" value="a" onclick="fillArray(14, this.value)"> 
+	[a] 2 4 6 8 10</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question4" value="b" onclick="fillArray(14, this.value)"> 
+	[b] 2 4 6 8</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question4" value="c" onclick="fillArray(14, this.value)"> 
+	[c] 2 4 6</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question4" value="d" onclick="fillArray(14, this.value)"> 
+	[d] 2 4 6 8 10 12 14 16 18 20</td></tr>
+<tr><td><br>
+	<p><b>15.&nbsp; What is the output for the following code fragment?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><font face="Arial">int [ ] dedo = { 1, 
+	3, 6, 9, 2, 5, 7};<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int que = dedo[0];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int k = 0; k &lt; dedo.length; k++)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (dedo[k] &lt; que)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	que = dedo[k];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.print(que);</font></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question5" value="a" onclick="fillArray(15, this.value)"> 
+	[a]&nbsp;&nbsp; <font face="Arial">1</font></td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question5" value="b" onclick="fillArray(15, this.value)"> 
+	[b]&nbsp; &nbsp;<font face="Arial">2</font></td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question5" value="c" onclick="fillArray(15, this.value)"> 
+	[c]<font face="Arial">&nbsp; &nbsp;1 3 6 9 2 5 7</font></td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question5" value="d" onclick="fillArray(15, this.value)"> 
+	[d] <font face="Arial">&nbsp; 7</font></td></tr>
+<tr><td><br>
+	<p><b>16.&nbsp; What is the output from the following code fragment?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><font face="Arial">&nbsp;String [ ] name = { 
+	"Joe", "Sue", "Tom", "Jill", "Patty"};<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int i = 0; i &lt; name.length; i = i + 2)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	System.out.print(name[i] + " ");</font></p></td></tr>
+<tr><td align="left">
+	<font face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question6" value="a" onclick="fillArray(16, this.value)"> 
+	[a] Joe Sue Tom Jill Patty</font></td></tr>
+<tr><td align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question6" value="b" onclick="fillArray(16, this.value)"> 
+	[b] Patty Jill Tom Sue Joe</font></td></tr>
+<tr><td align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question6" value="c" onclick="fillArray(16, this.value)"> 
+	[c] Joe Tom Patty</font></td></tr>
+<tr><td align="left"><font face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question6" value="d" onclick="fillArray(16, this.value)"> 
+	[d] Sue Jill</font></td></tr>
+<tr><td><br>
+	<p><b>17.&nbsp; What does this method do?<br>
+	<font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></b>
+	<font face="Arial">&nbsp;public static void cutUp(String word, char [ ] 
+	letter)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	if (letter.length &gt;= word.length( ) )<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	for (int i = 0; i &lt; word.length( ); i++)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	letter[i] = word.charAt(i);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</font></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question7" value="a" onclick="fillArray(17, this.value)"> 
+	[a] It checks to see if the array contains the same letters as the String.</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question7" value="b" onclick="fillArray(17, this.value)"> 
+	[b] It copies letters from the array to the String.</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question7" value="c" onclick="fillArray(17, this.value)"> 
+	[c] If there are enough cells in the array, it copies each letter from the 
+	String<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	to the array.</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question7" value="d" onclick="fillArray(17, this.value)"> 
+	[d] It creates a new array that holds the letters from the String.</td></tr>
+<tr><td><br>
+	<p><b>18.&nbsp; What is the output of the following code fragment?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><font face="Arial">int [ ] array 
+	= { 2, 4, 6, 8, 1, 3, 5, 7};<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int george = 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (int i = 0; i &lt; array.length; i++)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	george += array[i];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.print(george);</font></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question8" value="a" onclick="fillArray(18, this.value)"> 
+	[a] 2 4 6 8 1 3 5 7 </td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question8" value="b" onclick="fillArray(18, this.value)"> 
+	[b] 2 4 6 8</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question8" value="c" onclick="fillArray(18, this.value)"> 
+	[c] 7</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question8" value="d" onclick="fillArray(18, this.value)"> 
+	[d] 36</td></tr>
+<tr><td><br>
+	<p><b>19.&nbsp; What is the length of this array?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><font face="Arial">double[ ] stuff = 
+	{1.5,&nbsp; 2.5,&nbsp; 3.5,&nbsp; 4.5,&nbsp; 5.5,&nbsp; 6.5}; </font></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question9" value="a" onclick="fillArray(19, this.value)"> 
+	[a] 1</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question9" value="b" onclick="fillArray(19, this.value)"> 
+	[b] 5</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question9" value="c" onclick="fillArray(19, this.value)"> 
+	[c] 6</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question9" value="d" onclick="fillArray(19, this.value)"> 
+	[d] 7</td></tr>
+<tr><td><br>
+	<p><b>20.&nbsp; <span class="quia_standard">Which code line could possibly 
+	"call" this method?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><span class="quia_standard"><font face="Arial">public 
+	static int SomeMethod(double[ ] array, int[ ] number)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { . . .<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</font></span></p></td></tr>
+<tr><td align="left">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="question10" value="a" onclick="fillArray(20, this.value)"> 
+	[a] int value = SomeMethod(money, grades);</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question10" value="b" onclick="fillArray(20, this.value)"> 
+	[b] SomeMethod(money, grades);</td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question10" value="c" onclick="fillArray(20, this.value)"> 
+	[c] double value = SomeMethod(money, grades); </td></tr>
+<tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="question10" value="d" onclick="fillArray(20, this.value)"> 
+	[d] int value = SomeMethod(money);</td></tr>
+
+
+</tbody></table>
+	</td></tr>
+
+
+<tr><td align="center"><br>
+	<br>
+	<input type="button" onclick="GradeTheQuiz()" value="Check Answers"><br>
+&nbsp;</td></tr>
+
+</tbody></table>
+</div>
+</center>
+			</td>
+		</tr>
+		</tbody></table>
+	<p>&nbsp;</p></div>
+
+<div align="center">
+	<table border="3" width="650" id="table5" bgcolor="#FFFFFF" style="border-collapse: collapse" bordercolor="#C0C0C0">
+		<tbody><tr>
+			<td>
+  <center>
+      <p align="center">
+      <img border="0" src="./Multiple Choice Quiz for Java Unit 6 Arrays_files/mouse1.gif" width="500" height="32"></p>
+  </center>
+
+    <p align="center">
+      <font size="2"><a href="https://mathbits.com/MathBits/Java/arrays/arrays.htm">Return 
+		to Unit Menu</a> | <a href="https://mathbits.com/MathBits/Java/JavaOpenPage.htm">Java Main Page</a> |
+		<a href="http://mathbits.com/">MathBits.com</a> |
+		<a href="http://mathbits.com/MathBits/TermsOfUse/termsofuse.htm">Terms 
+		of Use </a>&nbsp;| <a href="https://mathbits.com/MathBits/Java/ResourceCD/ResourceCD.htm">Java Resource CD</a></font></p><p align="center">
+      &nbsp;
+          <script language="JavaScript" src="./Multiple Choice Quiz for Java Unit 6 Arrays_files/CopyrightJava.js.download">
+          </script><font face="Times New Roman" color="#000000" size="2">Copyright 2000-2022 <a href="http://mathbits.com/"> MathBits.com</a></font><br><font face="Times New Roman" color="#000000" size="2">All Rights Reserved</font> </p></td>
+		</tr>
+	</tbody></table>
+</div>
+
+
+</body></html>
